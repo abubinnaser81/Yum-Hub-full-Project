@@ -10,6 +10,8 @@ import menu_5 from './menu_5.png'
 import menu_6 from './menu_6.png'
 import menu_7 from './menu_7.png'
 import menu_8 from './menu_8.png'
+import logo_yum from './logo_yum-hub-removebg-preview.png'
+
 
 import food_1 from './food_1.png'
 import food_2 from './food_2.png'
@@ -61,6 +63,7 @@ import logout_icon from './logout_icon.png'
 import parcel_icon from './parcel_icon.png'
 
 const assets = {
+    logo_yum,
     logo,
     basket_icon,
     header_img,
