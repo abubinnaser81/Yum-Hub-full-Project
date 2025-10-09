@@ -1,11 +1,12 @@
 import React from 'react'
+import Navbar from './components/Navbar/Navbar'
 
 const App = () => {
   return (
-    <div>
-      <h1>Welcome to Yum Hub</h1>
-      <p>Your one-stop solution for all your culinary needs.</p>
-    </div>
+    <div className="App">
+    <Navbar/>
+
+     </div>
   )
 }
 
