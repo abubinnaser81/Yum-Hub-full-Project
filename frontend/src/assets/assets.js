@@ -60,7 +60,7 @@ import bag_icon from './bag_icon.png'
 import logout_icon from './logout_icon.png'
 import parcel_icon from './parcel_icon.png'
 
-export const assets = {
+const assets = {
     logo,
     basket_icon,
     header_img,
@@ -81,6 +81,8 @@ export const assets = {
     bag_icon,
     parcel_icon
 }
+
+export default assets
 
 export const menu_list = [
     {
