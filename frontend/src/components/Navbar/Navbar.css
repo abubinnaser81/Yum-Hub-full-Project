@@ -1,54 +1,112 @@
-.navbar{
-    padding:20px 0px;
-    display:flex;
-    justify-content: space-between;
-    align-items: center;
+.navbar {
+  padding: 20px 0;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap; /* helps when items overflow on small screens */
 }
-.navbar .logo{
-    width: 150px;
+
+.navbar .logo {
+  width: 150px;
 }
-.navbar-menu{
-    display: flex;
-    gap: 20px;
-    list-style: none;
-    color: #49557e;
-   font-size: 18px;
+
+.navbar-menu {
+  display: flex;
+  gap: 20px;
+  list-style: none;
+  color: #49557e;
+  font-size: 18px;
 }
- .navbar-right{
-    display: flex;
-    gap: 40px;
-    align-items: center;
- }
- .navbar button{
-    background-color: transparent;
-    font-size:16px;
-    color:#49557e;
-    border: 1px solid tan;
-    padding: 10px 30px;
-    border-radius: 50px;
-    cursor: pointer;
-    transform: 0.3s;
- }
- .navbar button:hover{
-    background-color: #fff4f2;
-    
- }
-  .navbar .active{
-    padding-bottom: 2px;
-    border-bottom: 2px solid #49557e;
-  }
-  .navbar li{
-    cursor: pointer;
-  }
-  .navbar-search-icon {
-    position: relative;
-  }
-  .navbar-search-icon .dot{
-    position: absolute;
-    top: -8px;
-    right: -8px;
+
+.navbar-right {
+  display: flex;
+  gap: 40px;
+  align-items: center;
+}
+
+.navbar button {
+  background-color: transparent;
+  font-size: 16px;
+  color: #49557e;
+  border: 1px solid tan;
+  padding: 10px 30px;
+  border-radius: 50px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.navbar button:hover {
+  background-color: #fff4f2;
+}
+
+.navbar .active {
+  padding-bottom: 2px;
+  border-bottom: 2px solid #49557e;
+}
+
+.navbar li {
+  cursor: pointer;
+}
+
+.navbar-search-icon {
+  position: relative;
+}
+
+.navbar-search-icon .dot {
+  position: absolute;
+  top: -8px;
+  right: -8px;
   min-width: 10px;
-   min-height: 10px;
-    background-color: #ff6e4e;
-    border-radius: 5px;
+  min-height: 10px;
+  background-color: #ff6e4e;
+  border-radius: 50%;
+}
+
+/* 📱 Responsive section */
+@media (max-width: 768px) {
+  .navbar {
+    flex-direction: column;
+    align-items: flex-start;
+    padding: 15px;
   }
+
+  .navbar .logo {
+    width: 120px;
+    margin-bottom: 10px;
+  }
+
+  .navbar-menu {
+    flex-direction: column;
+    gap: 15px;
+    font-size: 16px;
+    width: 100%;
+  }
+
+  .navbar-right {
+    width: 100%;
+    justify-content: space-between;
+    margin-top: 10px;
+  }
+
+  .navbar button {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+  }
+}
+
+/* 📲 Extra small screens (phones <480px) */
+@media (max-width: 480px) {
+  .navbar-menu {
+    font-size: 15px;
+    gap: 10px;
+  }
+
+  .navbar button {
+    padding: 8px 20px;
+  }
+
+  .navbar .logo {
+    width: 100px;
+  }
+}

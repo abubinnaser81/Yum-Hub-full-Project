@@ -3,7 +3,7 @@
     flex-direction: column;
     gap: 10px;
     /* margin: auto 40px; */
-    top: -100px;
+    top: -60px; min-width: 300px;
     position: relative;
  }
  .explore-menu h1   {
