@@ -6,7 +6,7 @@ const ExploreMenu = () => {
     <div className='explore-menu' id='explore-menu'>
         <h1>Explore our menu</h1>
         <p className='explore-menu-text'>choose from a diverse menu featuring a delectable array of dishes crafted with the finest ingredients and culinary expertise.Our mission is to satisfy your cravings and deliver an unforgettable dining experience right to your doorstep</p>
-        <div className="explore-menu-list"></div>
+        <div className="explore-menu-list">
         {menu_list.map((item,index)=>{
         return (
             <div key={index} className="explore-menu-list-item">
@@ -16,6 +16,7 @@ const ExploreMenu = () => {
         )
     
 })}
+    </div>
     </div>
   )
 }
