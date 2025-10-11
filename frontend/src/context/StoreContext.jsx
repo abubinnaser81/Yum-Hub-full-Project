@@ -9,13 +9,13 @@ export const StoreContextProvider = (props) => {
 
     const contextValue = {
         food_list
-    }
+    };
     // Add your context values
     return (
         <StoreContext.Provider value={contextValue}>
             {props.children}
         </StoreContext.Provider>
-    )
-}
+    );
+};
 
-export default StoreContextProvider
+export default StoreContextProvider;
