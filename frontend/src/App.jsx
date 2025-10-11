@@ -5,11 +5,11 @@ import Home from './pages/Home/Home'
 import Cart from './pages/Cart/Cart'
 import PlaceOrder from './pages/PlaceOrder/PlaceOrder'
 import './App.css'
-import { StoreProvider } from './context/StoreContext'   // ✅ Important!
+import { StoreContextProvider } from './context/StoreContext'   // ✅ Important!
 
 const App = () => {
   return (
-    <StoreContextProvider>   {/* ✅ Wrap here */}
+    <StoreContextProvider> 
       <div className="app">
         <Navbar />
         <Routes>
