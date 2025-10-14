@@ -33,7 +33,6 @@ const Footer = () => {
                 <li>abunaser50032@gmail.com</li>
             </ul>
         </div>
-       
     </div>
     <hr />
     <p className="footer-copyright">
