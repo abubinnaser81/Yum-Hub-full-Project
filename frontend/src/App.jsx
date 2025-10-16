@@ -11,6 +11,7 @@ import { StoreContextProvider } from './context/StoreContext'   // ✅ Important
 const App = () => {
   return (
     <StoreContextProvider> 
+      <>
       <div className="app">
         <Navbar />
         <Routes>
@@ -19,9 +20,10 @@ const App = () => {
           <Route path='/placeorder' element={<PlaceOrder />} />
 
         </Routes>
-        <Footer />
+        
       </div>
-      
+      <Footer />
+      </>
     </StoreContextProvider>
   )
 }
