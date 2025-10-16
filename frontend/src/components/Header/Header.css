@@ -35,4 +35,6 @@
     color: #747474;
     cursor: pointer;
     font-size: max(1vw, 10px);
+    font-weight: 500;
 }
+@media(max-)
