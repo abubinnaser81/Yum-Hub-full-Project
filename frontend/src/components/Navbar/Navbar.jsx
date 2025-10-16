@@ -1,7 +1,7 @@
 import React, { useState } from 'react'
 import './Navbar.css'
 import assets from '../../assets/assets'
-import { Link, Links } from 'react-router-dom'
+import { Link} from 'react-router-dom'
 
 const Navbar = ({setShowLogin}) => {
   const [menu, setMenu] = useState("Home")
@@ -16,7 +16,7 @@ const Navbar = ({setShowLogin}) => {
         <Link  to='/' className={menu === "Home" ? "active" : ""} onClick={() => setMenu("Home")}>Home</Link>
         <a href='#explore-menu' className={menu === "Menu" ? "active" : ""} onClick={() => setMenu("Menu")}>Menu</a>
         <a href='#app-download' className={menu === "Mobaile App" ? "active" : ""} onClick={() => setMenu("Mobaile App")}>Mobaile App</a>
-        <a href='footer' className={menu === "Contact us" ? "active" : ""} onClick={() => setMenu("Contact us")}>Contact us</a>
+        <a href='#footer' className={menu === "Contact us" ? "active" : ""} onClick={() => setMenu("Contact us")}>Contact us</a>
       </ul>
 
       {/* Right Section */}
