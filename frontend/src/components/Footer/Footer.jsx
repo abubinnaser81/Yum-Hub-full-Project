@@ -30,7 +30,10 @@ const Footer = () => {
             </h2>
             <ul>
                 <li>01832617081</li>
+                <li>01836303125</li>
                 <li>abunaser50032@gmail.com</li>
+                <li>fahmidaamintonni@gmail.com</li>
+
             </ul>
         </div>
     </div>
