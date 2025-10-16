@@ -1,10 +1,10 @@
 .navbar {
-  width: 100%;
+
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  flex-wrap: wrap; /* helps when items overflow on small screens */
+ /* helps when items overflow on small screens */
 }
 
 .navbar .logo {
