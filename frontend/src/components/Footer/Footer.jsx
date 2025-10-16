@@ -26,7 +26,7 @@ const Footer = () => {
         </div>
         <div className="footer-content-right">
             <h2>
-                GET IN TOUCH
+                GET IN
             </h2>
             <ul>
                 <li>01832617081</li>
@@ -36,7 +36,7 @@ const Footer = () => {
     </div>
     <hr />
     <p className="footer-copyright">
-        © 2023 Yum-Hub. All rights reserved.
+        © 2025 Yum-Hub. All rights reserved.
     </p>
     </div>
   )
