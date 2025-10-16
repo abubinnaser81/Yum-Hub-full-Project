@@ -1,14 +1,13 @@
 .navbar {
-
   padding: 20px 0;
   display: flex;
   justify-content: space-between;
   align-items: center;
- /* helps when items overflow on small screens */
 }
 
 .navbar .logo {
   width: 150px;
+  cursor: pointer;
 }
 
 .navbar-menu {
@@ -111,12 +110,39 @@
   }
 }
 
-@media (max-width: 700px) {
+/* 🔹 Mobile View */
+@media (max-width: 750px) {
   .navbar-menu {
     display: none;
+    flex-direction: column;
+    position: absolute;
+    top: 70px;
+    right: 20px;
+    background-color: white;
+    width: 200px;
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+    transition: all 0.3s ease;
+    z-index: 999;
   }
-  .navbar{
-     justify-content: space-between; /* keeps logo left, icons right */
-    padding: 15px 20px;
+
+  .navbar-menu.open {
+    display: flex;
   }
+
+  .navbar-right {
+    gap: 15px;
+  }
+
+  .menu-toggle {
+    display: block;
+    font-size: 26px;
+    cursor: pointer;
+  }
+}
+
+/* 🔹 Desktop: Hide hamburger */
+.menu-toggle {
+  display: none;
 }
