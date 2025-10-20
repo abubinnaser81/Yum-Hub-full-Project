@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { StoreContext } from "../../context/StoreContext";
 
 const Navbar = ({ setShowLogin }) => {
-  const [menu, setMenu] = useState("home");
+  const [menu, setMenu] = useState("menu");
   const { getTotalCartAmount } = useContext(StoreContext);
 
   // Cuisine menu items

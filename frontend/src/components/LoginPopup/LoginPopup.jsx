@@ -24,11 +24,10 @@ const LoginPopup = ({ setShowLogin }) => {
         <div className="login-popup-inputs">
           {/* Only show these fields for Sign Up */}
           {currState === "Sign Up" && (
-            <>
+          
               <input type="text" placeholder="Your Name" required />
-              <input type="tel" placeholder="Phone Number" required />
-              <input type="text" placeholder="Location" required />
-            </>
+             
+            
           )}
 
           {/* Common fields for both Login and Sign Up */}
