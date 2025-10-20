@@ -1,3 +1,4 @@
+/* Navbar base styles */
 .navbar {
   padding: 20px 0;
   display: flex;
@@ -46,6 +47,7 @@
 
 .navbar li {
   cursor: pointer;
+  position: relative;
 }
 
 .navbar-search-icon {
@@ -62,52 +64,51 @@
   border-radius: 5px;
 }
 
+/* ----------- Cuisine Dropdown ------------ */
+.navbar-menu li .dropdown {
+  display: none;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  background: white;
+  list-style: none;
+  padding: 0.5rem 0;
+  min-width: 150px;
+  box-shadow: 0 4px 6px rgba(0,0,0,0.1);
+  border-radius: 5px;
+  z-index: 1000;
+}
+
+.navbar-menu li:hover .dropdown {
+  display: block;
+}
+
+.dropdown li a {
+  display: block;
+  padding: 0.5rem 1rem;
+  text-decoration: none;
+  color: #49557e;
+}
+
+.dropdown li a:hover {
+  background: #f2f2f2;
+}
+
 /* ----------- RESPONSIVE ------------ */
 @media (max-width: 1050px) {
-  .navbar .logo {
-    width: 140px;
-  }
-
-  .navbar-menu {
-    gap: 20px;
-    font-size: 17px;
-  }
-
-  .navbar-right {
-    gap: 30px;
-  }
-
-  .navbar-right img {
-    width: 22px;
-  }
-
-  .navbar-right button {
-    padding: 8px 25px;
-  }
+  .navbar .logo { width: 140px; }
+  .navbar-menu { gap: 20px; font-size: 17px; }
+  .navbar-right { gap: 30px; }
+  .navbar-right img { width: 22px; }
+  .navbar-right button { padding: 8px 25px; }
 }
 
 @media (max-width: 900px) {
-  .navbar .logo {
-    width: 120px;
-  }
-
-  .navbar-menu {
-    gap: 15px;
-    font-size: 16px;
-  }
-
-  .navbar-right {
-    gap: 20px;
-  }
-
-  .navbar-right img {
-    width: 20px;
-  }
-
-  .navbar-right button {
-    padding: 7px 20px;
-    font-size: 15px;
-  }
+  .navbar .logo { width: 120px; }
+  .navbar-menu { gap: 15px; font-size: 16px; }
+  .navbar-right { gap: 20px; }
+  .navbar-right img { width: 20px; }
+  .navbar-right button { padding: 7px 20px; font-size: 15px; }
 }
 
 /* 🔹 Mobile View */
@@ -125,16 +126,22 @@
     box-shadow: 0 4px 10px rgba(0,0,0,0.15);
     transition: all 0.3s ease;
     z-index: 999;
-  
   }
 
   .navbar-menu.open {
     display: flex;
   }
 
-  .navbar-right {
-    gap: 15px;
+  /* Mobile: show dropdown on click */
+  .navbar-menu li .dropdown {
+    position: relative;
+    top: 0;
+    left: 0;
+    box-shadow: none;
+    border-radius: 0;
   }
+
+  .navbar-right { gap: 15px; }
 
   .menu-toggle {
     display: block;
@@ -144,6 +151,4 @@
 }
 
 /* 🔹 Desktop: Hide hamburger */
-.menu-toggle {
-  display: none;
-}
+.menu-toggle { display: none; }

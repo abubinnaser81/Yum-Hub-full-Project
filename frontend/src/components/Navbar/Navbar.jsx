@@ -8,6 +8,18 @@ const Navbar = ({ setShowLogin }) => {
   const [menu, setMenu] = useState("home");
   const { getTotalCartAmount } = useContext(StoreContext);
 
+  // Cuisine menu items
+  const cuisineItems = [
+    "Chinese",
+    "Seafood",
+    "Italian",
+    "Thai",
+    "Japanese",
+    "Turkish",
+    "Mexican",
+    "American"
+  ];
+
   return (
     <div className="navbar">
       {/* Logo */}
@@ -26,15 +38,21 @@ const Navbar = ({ setShowLogin }) => {
             Home
           </Link>
         </li>
-        <li>
-          <a
-            href="#explore-menu"
-            onClick={() => setMenu("menu")}
-            className={menu === "menu" ? "active" : ""}
-          >
-            Menu
-          </a>
+
+        {/* Cuisine Dropdown */}
+        <li className={menu === "cuisine" ? "active" : ""}>
+          <span onClick={() => setMenu("cuisine")}>Cuisine ▾</span>
+          <ul className="dropdown">
+            {cuisineItems.map((item, index) => (
+              <li key={index}>
+                <a href={`#${item.toLowerCase()}`} onClick={() => setMenu(item)}>
+                  {item}
+                </a>
+              </li>
+            ))}
+          </ul>
         </li>
+
         <li>
           <a
             href="#app-download"
