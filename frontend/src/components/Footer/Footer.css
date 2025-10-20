@@ -168,7 +168,7 @@
   .footer-content {
     grid-template-columns: 1fr;
     text-align: center;
-    /* align-items: center; */
+    align-items: center;
     gap: 30px;
   }
 
