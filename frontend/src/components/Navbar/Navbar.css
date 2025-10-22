@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 /* Navbar base styles */
 .navbar {
   padding: 20px 0;
@@ -152,3 +153,59 @@
 
 /* 🔹 Desktop: Hide hamburger */
 .menu-toggle { display: none; }
+=======
+.navbar{
+    padding:20px 0px;
+    display:flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.navbar .logo{
+    width: 150px;
+}
+.navbar-menu{
+    display: flex;
+    gap: 20px;
+    list-style: none;
+    color: #49557e;
+   font-size: 18px;
+}
+ .navbar-right{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+ }
+ .navbar button{
+    background-color: transparent;
+    font-size:16px;
+    color:#49557e;
+    border: 1px solid tan;
+    padding: 10px 30px;
+    border-radius: 50px;
+    cursor: pointer;
+    transform: 0.3s;
+ }
+ .navbar button:hover{
+    background-color: #fff4f2;
+    
+ }
+  .navbar .active{
+    padding-bottom: 2px;
+    border-bottom: 2px solid #49557e;
+  }
+  .navbar li{
+    cursor: pointer;
+  }
+  .navbar-search-icon {
+    position: relative;
+  }
+  .navbar-search-icon .dot{
+    position: absolute;
+    top: -8px;
+    right: -8px;
+  min-width: 10px;
+   min-height: 10px;
+    background-color: #ff6e4e;
+    border-radius: 5px;
+  }
+>>>>>>> parent of 6ab362a (eto vhul hsce matha onk grom hye jasce dhurr baal)
