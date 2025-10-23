@@ -10,15 +10,16 @@ const addFood = async (req,res) =>{
     const food = new foodModel({
         name:req.body.name,
         description:req.body.description,
-        price:req.body.category,
+        price:req.body.price,
+        category: req.body.category,
         image:image_filename
     })
 try{
     await food.save();
-    res.json({success:true,message:"Food Added"})
+    res.json({success: true, message: "Food Added"});
 } catch (error){
-    console.log(error)
-    res.json({success:false,message:"Error"})
+    console.log(error);
+    res.json({success: false, message: "Error"});
 }
-}
+};
 export {addFood}
