@@ -29,7 +29,7 @@
 }
 .login-popup-title img{
     width:16px;
-    cursor:pointer;
+    cursor: pointer;
 }
 .login-popup-inputs{
     display: flex;
@@ -48,14 +48,19 @@
     border-radius: 4px;
     color:white;
     background-color: tomato;
-    font-size:15px;
-    cursor:pointer;
+    font-size: 15px;
+    cursor: pointer;
 }
 .login-popup-condition{
     display: flex;
     align-items: start;
     gap: 8px;
     margin-top: -15px;
+}
+.login-popup-condition input{
+    width: 14px;
+    height: 14px;
+    margin-top: 5px;
 }
 .login-popup p span{
     color:tomato;
